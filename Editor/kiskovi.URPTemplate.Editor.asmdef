@@ -1,0 +1,15 @@
+{
+    "name": "kiskovi.URPTemplate.Editor",
+    "references": [
+        "GUID:33c7fa687122a584394c40882648330d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
