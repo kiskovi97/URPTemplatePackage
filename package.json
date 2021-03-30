@@ -18,6 +18,7 @@
   "hideInEditor": false,
   "type": "template",
   "dependencies": {
-    "com.unity.inputsystem": "1.0.2"
+    "com.unity.inputsystem": "1.0.2",
+    "jillejr.newtonsoft.json-for-unity": "1.0.2"
   }
 }
