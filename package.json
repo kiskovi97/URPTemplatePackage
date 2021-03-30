@@ -2,7 +2,7 @@
   "name": "com.kiskovi.urptemplate",
   "version": "1.2.3",
   "displayName": "URP Template",
-  "description": "THis is an URP Template for simple games",
+  "description": "This is an URP Template for simple games. Dependent from: https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm please add this to the project too",
   "unity": "2020.1",
   "unityRelease": "0a1",
   "keywords": [
@@ -19,6 +19,6 @@
   "type": "template",
   "dependencies": {
     "com.unity.inputsystem": "1.0.2",
-    "jillejr.newtonsoft.json-for-unity": "https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm"
+    "jillejr.newtonsoft.json-for-unity": "1.0.2"
   }
 }
