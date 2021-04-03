@@ -1,5 +1,6 @@
 ﻿using System;
 using URPTemplate.Core;
+using URPTemplate.Model;
 
 namespace URPTemplate.Database
 {
@@ -7,10 +8,10 @@ namespace URPTemplate.Database
     {
         #region Tables
 
-        private static DatabaseTable<MaxScores> mScoreTable = new DatabaseTable<MaxScores>("TableUIText");
+        private static DatabaseTable<MaxScore> mScoreTable = new DatabaseTable<MaxScore>("TableUIText");
         private static AppSettingsDatabase mAppSettingsDatabase = new AppSettingsDatabase();
 
-        public static IDataProvider<MaxScores> scoreTable => mScoreTable;
+        public static IDataProvider<MaxScore> scoreTable => mScoreTable;
         
         public static IAppSettingsDatabase settingsDatabase => mAppSettingsDatabase;
 

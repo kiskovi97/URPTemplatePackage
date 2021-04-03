@@ -1,5 +1,4 @@
-﻿using Assets;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace URPTemplate.UI

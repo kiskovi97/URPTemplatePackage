@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9034460564933923832}
   - component: {fileID: 9034460564933923828}
-  - component: {fileID: 9034460564933923829}
   - component: {fileID: 9034460564933923833}
   - component: {fileID: 9034460564933923834}
+  - component: {fileID: 6508042100464037394}
   m_Layer: 5
   m_Name: GamePlayPanel
   m_TagString: Untagged
@@ -48,18 +48,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9034460564933923839}
   m_CullTransparentMesh: 0
---- !u!114 &9034460564933923829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9034460564933923839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ba50ef2f7c9ef409597d560c493fba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9034460564933923833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,6 +104,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6508042100464037394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034460564933923839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176f44ba9588e674ba46433fcd763492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2997004535798446480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,14 +214,14 @@ PrefabInstance:
     - target: {fileID: 7837525246932658009, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9034460564933923829}
+      objectReference: {fileID: 6508042100464037394}
     - target: {fileID: 7837525246932658009, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ExitClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7837525246932658009, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: URPTemplate.UI.MenuScreenController, URPTemplate.UI
+      value: URPTemplate.UI.GameplayController, kiskovi.URPTemplate.Runtime
       objectReference: {fileID: 0}
     - target: {fileID: 7837525246932658015, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_Name

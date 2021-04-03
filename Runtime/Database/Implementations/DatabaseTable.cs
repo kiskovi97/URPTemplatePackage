@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using URPTemplate.Core;
+using URPTemplate.Model;
 
 namespace URPTemplate.Database
 {
@@ -50,8 +51,8 @@ namespace URPTemplate.Database
 
         public T SelectItem<TKey>(Func<T, bool> predictate, Func<T, TKey> orderPredictate)
         {
-            return orderPredictate == null 
-                ? database.mElements.Values.Where(predictate).DefaultIfEmpty().First() 
+            return orderPredictate == null
+                ? database.mElements.Values.Where(predictate).DefaultIfEmpty().First()
                 : database.mElements.Values.Where(predictate).OrderBy(orderPredictate).DefaultIfEmpty().First();
         }
 
@@ -64,7 +65,14 @@ namespace URPTemplate.Database
 
         public void AddItem(T item)
         {
-            database.mElements.Add(item.id, item);
+            if (database.mElements.ContainsKey(item.id))
+            {
+                var element = database.mElements[item.id];
+                if (element.CompareTo(item) < 0)
+                    database.mElements[item.id] = item;
+            }
+            else
+                database.mElements.Add(item.id, item);
         }
 
         public void RemoveItem(string itemId)

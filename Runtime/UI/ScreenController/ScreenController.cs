@@ -1,6 +1,6 @@
-﻿using Assets;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using URPTemplate.Core;
 
 namespace URPTemplate.UI
 {
@@ -16,7 +16,7 @@ namespace URPTemplate.UI
             InputHandler.RemoveCallback(this);
         }
 
-        public void ExitClicked()
+        public virtual void ExitClicked()
         {
             Debug.Log("Exit Clicked");
             UIScreenManager.Exit();

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Assets
+namespace URPTemplate.Core
 {
     public class InputHandler : MonoBehaviour, Controls.INavigateActions
     {
