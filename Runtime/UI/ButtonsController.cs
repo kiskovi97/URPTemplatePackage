@@ -1,21 +1,30 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 namespace URPTemplate.UI
 {
     public class ButtonsController : MonoBehaviour
     {
-        private ButtonElement[] buttons;
 
+        public GameObject firstButton;
         private void Start()
         {
-            buttons = GetComponentsInChildren<ButtonElement>();
-            foreach (var button in buttons)
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(firstButton);
+        }
+
+        private void Update()
+        {
+           
+            if (Gamepad.all.Count > 0)
             {
-                if (button.IsSelected)
-                    return;
+                if (EventSystem.current.currentSelectedGameObject == null)
+                {
+                    EventSystem.current.SetSelectedGameObject(null);
+                    EventSystem.current.SetSelectedGameObject(firstButton);
+                }
             }
-            if (buttons.Length > 0)
-                buttons[0].Select();
         }
     }
 }

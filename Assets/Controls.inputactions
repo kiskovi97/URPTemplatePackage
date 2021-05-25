@@ -29,7 +29,7 @@
                 {
                     "name": "",
                     "id": "1c660db3-94d4-44b7-bcb0-6cf15d1e7004",
-                    "path": "<XInputController>/buttonEast",
+                    "path": "<XInputController>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

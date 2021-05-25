@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using URPTemplate.Database;
 
@@ -12,6 +13,7 @@ namespace URPTemplate.UI
 
         public GameObject savePanel;
         public InputField inputField;
+        public GameObject firstButtonPause;
 
         private void OnEnable()
         {
@@ -59,6 +61,9 @@ namespace URPTemplate.UI
             savePanel.SetActive(true);
             timeScale = Time.timeScale;
             Time.timeScale = 0f;
+
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(firstButtonPause);
         }
     }
 }

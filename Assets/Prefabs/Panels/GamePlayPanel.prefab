@@ -399,7 +399,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.06132078, g: 1, b: 0.18262722, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -722,6 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savePanel: {fileID: 8751628185074912782}
   inputField: {fileID: 8664566354791546064}
+  firstButtonPause: {fileID: 5604564219337813359}
 --- !u!1 &9200590181878964536
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +912,10 @@ PrefabInstance:
     - target: {fileID: 7837525246932658015, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_Name
       value: EndButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837525246932658015, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
