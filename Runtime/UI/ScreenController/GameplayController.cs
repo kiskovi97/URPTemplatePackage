@@ -12,24 +12,7 @@ namespace URPTemplate.UI
         public static float timeScale = 1f;
 
         public GameObject savePanel;
-        public InputField inputField;
         public GameObject firstButtonPause;
-
-        private void OnEnable()
-        {
-            inputField.text = userName;
-            inputField.onValueChanged.AddListener(ValueChanged);
-        }
-
-        private void OnDisable()
-        {
-            inputField.onValueChanged.AddListener(ValueChanged);
-        }
-
-        private void ValueChanged(string name)
-        {
-            userName = name;
-        }
 
         public void SaveScore()
         {
@@ -64,6 +47,14 @@ namespace URPTemplate.UI
 
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(firstButtonPause);
+        }
+
+        public void ResumeClicked()
+        {
+            savePanel.SetActive(false);
+            Time.timeScale = timeScale;
+
+            EventSystem.current.SetSelectedGameObject(null);
         }
     }
 }

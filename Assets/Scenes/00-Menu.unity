@@ -731,10 +731,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 6720302819857970796, guid: 084b46eafef80e1409a3b119940b68d3, type: 3}
-      propertyPath: firstButton
-      value: 
-      objectReference: {fileID: 1691971365}
     - target: {fileID: 6720302819857970799, guid: 084b46eafef80e1409a3b119940b68d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
