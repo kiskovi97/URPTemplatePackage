@@ -2,7 +2,9 @@
     "name": "Unity.kiskovi.URPTemplate.Editor",
     "references": [],
     "includePlatforms": [],
-    "excludePlatforms": [],
+    "excludePlatforms": [
+        "Editor"
+    ],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [],
