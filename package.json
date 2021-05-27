@@ -1,6 +1,6 @@
 {
   "name": "com.kiskovi.urptemplate",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "displayName": "URP Template",
   "description": "This is an URP Template for simple games. Dependent from: https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm please add this to the project too",
   "unity": "2020.1",
