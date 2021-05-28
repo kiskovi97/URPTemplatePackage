@@ -9,7 +9,7 @@ public class VisibilityController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-#if UNITY_ANDROID || UNITY_IOS || UNITY_STANDALONE
+#if UNITY_ANDROID || UNITY_IOS
 #else
         gameObject.SetActive(false);
 #endif
