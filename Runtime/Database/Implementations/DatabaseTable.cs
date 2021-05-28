@@ -67,9 +67,7 @@ namespace URPTemplate.Database
         {
             if (database.mElements.ContainsKey(item.id))
             {
-                var element = database.mElements[item.id];
-                if (element.CompareTo(item) < 0)
-                    database.mElements[item.id] = item;
+                database.mElements[item.id] = item;
             }
             else
                 database.mElements.Add(item.id, item);
