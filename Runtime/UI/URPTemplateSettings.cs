@@ -4,7 +4,8 @@ namespace URPTemplate.UI
 {
     public class URPTemplateSettings : ScriptableObject
     {
-        public const string k_URPTemplateSettingsPath = "Assets/URPTemplateSettings.asset";
+        public const string k_URPTemplateSettingsPath = "Assets/Resources/" + k_URPTemplateResources + ".asset";
+        private const string k_URPTemplateResources = "URPTemplateSettings";
 
         [SerializeField]
         public Sprite m_Background;
@@ -20,7 +21,7 @@ namespace URPTemplate.UI
 
         public static URPTemplateSettings GetOrCreateSettings()
         {
-            var settings = Resources.Load<URPTemplateSettings>(k_URPTemplateSettingsPath);
+            var settings = Resources.Load<URPTemplateSettings>(k_URPTemplateResources);
             if (settings == null)
             {
                 settings = ScriptableObject.CreateInstance<URPTemplateSettings>();

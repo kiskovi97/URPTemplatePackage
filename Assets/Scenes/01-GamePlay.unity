@@ -347,6 +347,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.000061035156
       objectReference: {fileID: 0}
+    - target: {fileID: 7614091643693408082, guid: 8b6037762d0f5df48a7f17fbf96d5a8d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614091643693408082, guid: 8b6037762d0f5df48a7f17fbf96d5a8d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614091643693408082, guid: 8b6037762d0f5df48a7f17fbf96d5a8d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7614091643867311238, guid: 8b6037762d0f5df48a7f17fbf96d5a8d, type: 3}
       propertyPath: m_Name
       value: LevelLoader
