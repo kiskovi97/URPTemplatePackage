@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 747996352647142877}
   - component: {fileID: 5013424177270446190}
   - component: {fileID: 1998126184829423474}
-  - component: {fileID: 7526374516396614903}
+  - component: {fileID: 6043636564504847197}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7526374516396614903
+--- !u!114 &6043636564504847197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2124723332238207287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 48e8c48dd3aea164985679f04a76c23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -100,7 +100,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.06132078, g: 1, b: 0.18262722, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -132,6 +132,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonName: Resume
+  buttonColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &4972356052310265137
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1c9dad0b3279049861a22605553a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Phone: 1
 --- !u!1 &5604564219337813359
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +237,7 @@ GameObject:
   - component: {fileID: 8045926166124515997}
   - component: {fileID: 8837477169284503879}
   - component: {fileID: 3471013463232770936}
-  - component: {fileID: 1501023918470352753}
+  - component: {fileID: 6442517229804871227}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -300,7 +303,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1501023918470352753
+--- !u!114 &6442517229804871227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,7 +312,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5604564219337813359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 48e8c48dd3aea164985679f04a76c23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -323,7 +326,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.06132078, g: 1, b: 0.18262722, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -355,6 +358,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonName: Exit
+  buttonColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &8751628185074912782
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,8 +452,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 15
-    m_Right: 15
+    m_Left: 30
+    m_Right: 30
     m_Top: 15
     m_Bottom: 15
   m_ChildAlignment: 0
@@ -654,7 +659,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7837525246229731506, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_Text
-      value: Pause
+      value: End
       objectReference: {fileID: 0}
     - target: {fileID: 7837525246229731506, guid: 91687aa8110be1145bc46ab987e2a411, type: 3}
       propertyPath: m_FontData.m_FontStyle
