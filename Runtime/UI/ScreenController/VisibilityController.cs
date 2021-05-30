@@ -6,12 +6,17 @@ using UnityEngine.InputSystem;
 
 public class VisibilityController : MonoBehaviour
 {
+    public bool Phone = true;
+
     // Update is called once per frame
     void Update()
     {
 #if UNITY_ANDROID || UNITY_IOS
+        if (!Phone)
+            gameObject.SetActive(false);
 #else
-        gameObject.SetActive(false);
+        if (Phone)
+            gameObject.SetActive(false);
 #endif
     }
 }
